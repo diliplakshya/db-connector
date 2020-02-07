@@ -7,3 +7,5 @@ echo "**** Installing Python Dev Package ****"
 # This is to get Python.h and Python C API (embedding Python into C++)
 apt-get --yes --force-yes install python3.5-dev
 echo "**********************************"
+
+# Need to install PIP, pymysql
