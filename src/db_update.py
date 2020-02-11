@@ -18,7 +18,51 @@ Module which interacts with database by executing mysql queries and fetches reco
 			@date 10th July 2019
 """
 
+class ConnectionInfo:
+    def __init__(self):
+        self._host = None
+        self._name = None
+        self._user = None
+        self._password = None
 
+    @property
+    def host(self):
+        return self._host
+
+    @host.setter
+    def host(self, host):
+        self._host = host
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        self._name = name        
+
+    @property
+    def user(self):
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        self._user = user
+
+    @property
+    def password(self):
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        self._password = password
+
+    def __iter__(self):
+        yield self._host
+        yield self._name
+        yield self._user
+        yield self._password
+		
 class DBUpdate:
 	""" Class DBUpdate represents methods to be used for interacting with mysql DB.
 
