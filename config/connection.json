@@ -1,0 +1,20 @@
+{
+
+    "MySql": {
+        "Database": "MySql",
+        "Host": "127.0.0.1",
+        "Port": "3306",
+        "Name": "local",
+        "User": "local",
+        "Password": ""
+    },
+    "Oracle": {
+        "Database": "Oracle",
+        "Host": "127.0.0.1",
+        "Port": "3306",
+        "ServiceName": "orcl",
+        "Name": "local",
+        "User": "local",
+        "Password": ""
+    }
+}
